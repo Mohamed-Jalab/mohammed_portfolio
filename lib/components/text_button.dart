@@ -59,7 +59,7 @@ class TextButton extends StatelessComponent {
       // stacking context so it remains above the parent background.
       zIndex: ZIndex(-1),
       width: 2.px,
-      height: 32.px,
+      height: 100.percent,
       transition: Transition("all", duration: Duration(milliseconds: 200)),
       backgroundColor: Color.variable("--btn-fg"),
     ),

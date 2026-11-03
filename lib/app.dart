@@ -2,15 +2,18 @@ import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 
 import 'views/about_me_and_skills_view.dart';
+import 'views/contact_view.dart';
+import 'views/footer_view.dart';
 import 'views/info_view.dart';
 import 'views/landing_view.dart';
+import 'views/portfolio_view.dart';
 
 class App extends StatelessComponent {
   const App({super.key});
 
   @override
   Component build(BuildContext context) {
-    return .fragment([LandingView(), InfoView(), AboutMeAndSkillsView()]);
+    return .fragment([LandingView(), InfoView(), AboutMeAndSkillsView(), PortfolioView(), ContactView(), FooterView()]);
   }
 
   @css
@@ -26,7 +29,7 @@ class App extends StatelessComponent {
     css.fontFace(family: "Raleway", url: "fonts/Raleway-SemiBold.ttf"),
     css.fontFace(family: "Raleway", url: "fonts/Raleway-Bold.ttf"),
     css.fontFace(family: "Raleway", url: "fonts/Raleway-ExtraBold.ttf"),
-    
+
     css.fontFace(family: "Open Sans", url: "fonts/OpenSans-Light.ttf"),
     css.fontFace(family: "Open Sans", url: "fonts/OpenSans-Regular.ttf"),
     css.fontFace(family: "Open Sans", url: "fonts/OpenSans-Medium.ttf"),

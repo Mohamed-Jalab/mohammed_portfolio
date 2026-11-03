@@ -12,8 +12,12 @@ import 'package:mohammed_portfolio/components/service_card.dart'
 import 'package:mohammed_portfolio/components/text_button.dart' as _text_button;
 import 'package:mohammed_portfolio/views/about_me_and_skills_view.dart'
     as _about_me_and_skills_view;
+import 'package:mohammed_portfolio/views/contact_view.dart' as _contact_view;
+import 'package:mohammed_portfolio/views/footer_view.dart' as _footer_view;
 import 'package:mohammed_portfolio/views/info_view.dart' as _info_view;
 import 'package:mohammed_portfolio/views/landing_view.dart' as _landing_view;
+import 'package:mohammed_portfolio/views/portfolio_view.dart'
+    as _portfolio_view;
 import 'package:mohammed_portfolio/app.dart' as _app;
 
 /// Default [ServerOptions] for use with your Jaspr project.
@@ -42,7 +46,11 @@ ServerOptions get defaultServerOptions => ServerOptions(
     ..._text_button.TextButton.styles,
     ..._about_me_and_skills_view.AboutMeAndSkillsView.styles,
     ..._about_me_and_skills_view.SkillItem.styles,
+    ..._contact_view.ContactView.styles,
+    ..._footer_view.FooterView.styles,
     ..._info_view.InfoView.styles,
     ..._landing_view.LandingView.styles,
+    ..._portfolio_view.PortfolioView.styles,
+    ..._portfolio_view.ProjectCard.styles,
   ],
 );

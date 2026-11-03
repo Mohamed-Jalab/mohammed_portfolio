@@ -29,7 +29,9 @@ void main() {
         css('ul').styles(listStyle: .none),
         css('a').styles(textDecoration: .none),
       ],
-      head: [link(href: "styles/all.min.css", rel: "stylesheet")],
+      head: [
+        link(rel: "icon", href: "images/logo.svg", type: "image/svg+xml"),
+        link(href: "styles/all.min.css", rel: "stylesheet")],
       
       body: App(),
     ),

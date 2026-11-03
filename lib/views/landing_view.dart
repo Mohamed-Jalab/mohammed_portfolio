@@ -9,11 +9,11 @@ class LandingView extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return div(classes: "landing", [
+    return div(id: "top", classes: "landing", [
       div(classes: "container", [
         header([
           div(classes: "image", [
-            a(href: "#", [img(src: "images/logo.png")]),
+            a(href: "#top", [img(src: "images/logo.svg", alt: "Logo")]),
           ]),
           nav([
             ul([
@@ -45,7 +45,7 @@ class LandingView extends StatelessComponent {
             div(classes: "social-links", [
               SocialLink(url: "mailto:jalabmouhamed@gmail.com", iconCode: "fa-solid fa-at"),
               SocialLink(url: "https://github.com/Mohamed-Jalab", iconCode: "fa-brands fa-github"),
-              SocialLink(url: "", iconCode: "fa-brands fa-square-linkedin"),
+              SocialLink(url: "https://www.linkedin.com/in/mouhammed-deeb-jalab/", iconCode: "fa-brands fa-square-linkedin"),
             ]),
           ]),
           div(classes: "image-content", [img(src: "images/mohammed.png")]),
@@ -131,7 +131,8 @@ class LandingView extends StatelessComponent {
     css(".image-content img").styles(maxWidth: 100.percent, position: .relative(), raw: {'object-fit': 'cover'}),
 
     css(".text-content").styles(
-      padding: .only(top: 180.px),
+      // padding: .only(top: 180.px),
+      margin: .symmetric(vertical: .auto),
       // color: Colors.black,
       // fontFamily: FontFamily("Raleway"),
       // fontSize: 40.px,

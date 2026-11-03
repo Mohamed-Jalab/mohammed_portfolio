@@ -16,7 +16,7 @@ class AboutMeAndSkillsView extends StatelessComponent {
           Header(title: "About Me"),
           p([
             .text(
-              "Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.",
+              "I’m a software developer focused on building clean, efficient, and user-centered digital experiences. I enjoy turning ideas into practical solutions through thoughtful design, modern technologies, and reliable implementation.",
             ),
           ]),
           TextButton(url: "#", text: "Explore", color: Colors.black, hoverColor: Colors.white),
