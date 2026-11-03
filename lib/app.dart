@@ -17,7 +17,37 @@ class App extends StatelessComponent {
   }
 
   @css
-  static List<StyleRule> get styles => [];
+  static List<StyleRule> get styles => [
+    css("html").styles(
+      raw: {
+        "scrollbar-width": "thin",
+        "scrollbar-color": "#191919 #f3f3f3",
+      },
+    ),
+    css("::-webkit-scrollbar").styles(
+      width: 12.px,
+      height: 12.px,
+    ),
+    css("::-webkit-scrollbar-track").styles(
+      raw: {
+        "background": "#f3f3f3",
+        "border-radius": "999px",
+      },
+    ),
+    css("::-webkit-scrollbar-thumb").styles(
+      backgroundColor: Color("#191919"),
+      radius: .all(.circular(999.px)),
+      border: .all(style: .solid, width: 2.px, color: Color("#f3f3f3")),
+    ),
+    css("::-webkit-scrollbar-thumb:hover").styles(
+      backgroundColor: Color("#2d2d2d"),
+    ),
+    css("::-webkit-scrollbar-corner").styles(
+      raw: {
+        "background": "#f3f3f3",
+      },
+    ),
+  ];
   static List<StyleRule> fontsStyle = [
     css.fontFace(family: "Montserrat", url: "fonts/Montserrat-Regular.ttf"),
     css.fontFace(family: "Montserrat", url: "fonts/Montserrat-Medium.ttf"),
