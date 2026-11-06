@@ -50,17 +50,22 @@ class InfoView extends StatelessComponent {
     css(".info .info-text").styles(flex: Flex.grow(1)),
     css(".info img").styles(
       position: .absolute(top: (-160).px, right: 90.px),
+      zIndex: ZIndex(0),
       width: 390.px,
       transform: Transform.rotate(24.deg),
     ),
 
     css(".info-text h2").styles(
+      position: .relative(),
+      zIndex: ZIndex(1),
       fontFamily: FontFamily("Montserrat"),
       fontSize: 30.px,
       fontWeight: .bold,
     ),
     css(".info-text p").styles(
-      padding: .only(right: 650.px),
+      position: .relative(),
+      zIndex: ZIndex(1),
+      padding: .only(right: 450.px),
       margin: .symmetric(vertical: 26.px),
       fontFamily: FontFamily("Open Sans"),
       fontSize: 15.px,

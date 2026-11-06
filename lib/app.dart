@@ -13,7 +13,14 @@ class App extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return .fragment([LandingView(), InfoView(), AboutMeAndSkillsView(), PortfolioView(), ContactView(), FooterView()]);
+    return .fragment([
+      LandingView(),
+      InfoView(),
+      AboutMeAndSkillsView(),
+      PortfolioView(),
+      ContactView(),
+      FooterView(),
+    ]);
   }
 
   @css
@@ -35,9 +42,9 @@ class App extends StatelessComponent {
       },
     ),
     css("::-webkit-scrollbar-thumb").styles(
-      backgroundColor: Color("#191919"),
-      radius: .all(.circular(999.px)),
       border: .all(style: .solid, width: 2.px, color: Color("#f3f3f3")),
+      radius: .all(.circular(10.px)),
+      backgroundColor: Color("#191919"),
     ),
     css("::-webkit-scrollbar-thumb:hover").styles(
       backgroundColor: Color("#2d2d2d"),

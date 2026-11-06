@@ -5,6 +5,7 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/server.dart';
+import 'package:mohammed_portfolio/components/drawer.dart' as _drawer;
 import 'package:mohammed_portfolio/components/header.dart' as _header;
 import 'package:mohammed_portfolio/components/icon_button.dart' as _icon_button;
 import 'package:mohammed_portfolio/components/service_card.dart'
@@ -38,8 +39,10 @@ import 'package:mohammed_portfolio/app.dart' as _app;
 /// ```
 ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
+  clients: {_drawer.Drawer: ClientTarget<_drawer.Drawer>('drawer')},
   styles: () => [
     ..._app.App.styles,
+    ..._drawer.DrawerState.styles,
     ..._header.Header.styles,
     ..._icon_button.SocialLink.styles,
     ..._service_card.ServiceCard.styles,

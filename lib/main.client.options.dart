@@ -6,6 +6,8 @@
 
 import 'package:jaspr/client.dart';
 
+import 'package:mohammed_portfolio/components/drawer.dart' deferred as _drawer;
+
 /// Default [ClientOptions] for use with your Jaspr project.
 ///
 /// Use this to initialize Jaspr **before** calling [runApp].
@@ -22,4 +24,11 @@ import 'package:jaspr/client.dart';
 ///   runApp(...);
 /// }
 /// ```
-ClientOptions get defaultClientOptions => ClientOptions();
+ClientOptions get defaultClientOptions => ClientOptions(
+  clients: {
+    'drawer': ClientLoader(
+      (p) => _drawer.Drawer(),
+      loader: _drawer.loadLibrary,
+    ),
+  },
+);

@@ -32,7 +32,6 @@ void main() {
       head: [
         link(rel: "icon", href: "images/logo.svg", type: "image/svg+xml"),
         link(href: "styles/all.min.css", rel: "stylesheet")],
-      
       body: App(),
     ),
   );

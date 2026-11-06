@@ -11,26 +11,35 @@ class FooterView extends StatelessComponent {
         backgroundColor: Color("#1A1A1A"),
       ),
       [
-        i(
-          classes: "fa-solid fa-angles-up",
+        a(
           styles: Styles(
             display: .block,
-            margin: .symmetric(horizontal: .auto),
             color: Colors.white,
           ),
-          [],
-        ),
-        span(
-          styles: Styles(
-            display: .block,
-            margin: .only(top: 10.px, bottom: 45.px),
-            color: Colors.white,
-            fontFamily: FontFamily("Montserrat"),
-            fontSize: 15.px,
-            fontWeight: .bold,
-            letterSpacing: .1854.em,
-          ),
-          [.text("BACK TO TOP")],
+          href: "#top",
+          [
+            i(
+              classes: "fa-solid fa-angles-up",
+              styles: Styles(
+                display: .block,
+                margin: .symmetric(horizontal: .auto),
+                color: Colors.white,
+              ),
+              [],
+            ),
+            span(
+              styles: Styles(
+                display: .block,
+                margin: .only(top: 10.px, bottom: 45.px),
+                color: Colors.white,
+                fontFamily: FontFamily("Montserrat"),
+                fontSize: 15.px,
+                fontWeight: .bold,
+                letterSpacing: .1854.em,
+              ),
+              [.text("BACK TO TOP")],
+            ),
+          ],
         ),
         div(
           styles: Styles(
